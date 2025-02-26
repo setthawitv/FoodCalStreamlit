@@ -81,5 +81,3 @@ def show_calories_dashboard():
 
 if __name__ == "__main__":
     show_calories_dashboard()
-
-#hi
