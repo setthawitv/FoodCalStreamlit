@@ -3,13 +3,6 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 import urllib
 
-import os
-import subprocess
-
-# Run setup.sh to install the ODBC driver before launching the app
-if not os.path.exists("/opt/microsoft/msodbcsql18"):
-    subprocess.run(["bash", "setup.sh"], check=True)
-
 class AzureSQL():
     def __init__(self):
         self.SERVER = 'foodcal.database.windows.net'
