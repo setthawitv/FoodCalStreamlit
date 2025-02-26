@@ -54,7 +54,7 @@ def show_calories_dashboard():
     user_id = st.text_input("🔑 Enter Your UID", value=default_uid)
 
     if not user_id:
-        st.warning("⚠️ Please enter your UID (or tap Rich Menu to autofill).")
+        st.warning("⚠️ Please enter your UID.")
         return
 
     st.subheader("📅 Past 7 Days Summary")
