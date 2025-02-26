@@ -16,7 +16,7 @@ class AzureSQL():
         self.DATABASE = 'FoodCal'
         self.USERNAME = 'mos'
         self.PASSWORD = 'Setthawit1'
-        self.DRIVER = '{ODBC Driver 18 for SQL Server}'
+        self.DRIVER = '{ODBC Driver 17 for SQL Server}'
         self.connection_string = f'DRIVER={self.DRIVER};SERVER=tcp:{self.SERVER};PORT=1433;DATABASE={self.DATABASE};UID={self.USERNAME};PWD={self.PASSWORD}'
         self.sqlalchemy_connection_string = f'mssql+pyodbc:///?odbc_connect={urllib.parse.quote_plus(self.connection_string)}'
 
