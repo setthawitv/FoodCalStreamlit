@@ -3,6 +3,7 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 import urllib
 
+
 class AzureSQL():
     def __init__(self):
         self.SERVER = 'foodcal.database.windows.net'
@@ -80,3 +81,5 @@ def show_calories_dashboard():
 
 if __name__ == "__main__":
     show_calories_dashboard()
+
+#hi
