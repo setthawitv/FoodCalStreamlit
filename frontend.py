@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine, text
+import urllib
 
 class AzureSQL():
     def __init__(self):
